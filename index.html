@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saporte</title>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #334155;
+      --accent: #0e7490;
+      --bg1: #ecfeff;
+      --bg2: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #a5f3fc 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #bae6fd 0%, transparent 50%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 36rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.75rem, 8vw, 4.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    p {
+      margin: 0 0 1.75rem;
+      font-size: 1.25rem;
+      color: var(--muted);
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    }
+    a {
+      color: var(--accent);
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    }
+    a:hover { border-bottom-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Saporte</h1>
+    <p>Managed IT for growing businesses.</p>
+    <p><a href="mailto:andy@saporte.com">andy@saporte.com</a></p>
+  </main>
+</body>
+</html>
